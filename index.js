@@ -23,7 +23,7 @@ app.use(comicIdRoutes);
 app.use(comicsSpecificCharactersRoutes);
 
 app.get("/", (req, res) => {
-  res.json(201).json("Welcolme on Marvel API 👾👾👾 ");
+  res.json(201).json({ message: "Welcolme on Marvel API 👾👾👾 " });
 });
 
 app.all("*", (req, res) => {
