@@ -21,8 +21,9 @@ app.use(comicsRoutes);
 app.use(characterIdRoutes);
 app.use(comicIdRoutes);
 app.use(comicsSpecificCharactersRoutes);
+
 app.get("/", (req, res) => {
-  res.send(response.data);
+  res.json(201).json("Welcolme on Marvel API 👾👾👾 ");
 });
 
 app.all("*", (req, res) => {
